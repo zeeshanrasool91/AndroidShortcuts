@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="25">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_exposure_plus_1"
+        android:shortcutId="show_string_toast"
+        android:shortcutShortLabel="@string/show_string_toast">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.zeeshan.rasool.MainActivity"
+            android:targetPackage="com.zeeshan.rasool">
+            <extra
+                android:name="name"
+                android:value="ZeeshanRasool" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_exposure_plus_2"
+        android:shortcutId="show_boolean_toast"
+        android:shortcutShortLabel="@string/show_boolean_toast">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.zeeshan.rasool.MainActivity"
+            android:targetPackage="com.zeeshan.rasool">
+            <extra
+                android:name="toDo"
+                android:value="true" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
