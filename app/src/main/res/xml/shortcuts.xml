@@ -33,4 +33,20 @@
         </intent>
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_notifications"
+        android:shortcutId="show_notification"
+        android:shortcutShortLabel="@string/show_notification">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.zeeshan.rasool.MainActivity"
+            android:targetPackage="com.zeeshan.rasool">
+            <extra
+                android:name="showNotification"
+                android:value="1" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
 </shortcuts>

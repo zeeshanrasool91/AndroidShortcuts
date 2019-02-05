@@ -2,4 +2,5 @@
     <string name="app_name">Android Shortcuts</string>
     <string name="show_boolean_toast">Show toast with Boolean</string>
     <string name="show_string_toast">Show toast with String</string>
+    <string name="show_notification">Show notification</string>
 </resources>
