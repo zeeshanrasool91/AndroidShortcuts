@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Task task = new TaskBuilder("Zeeshan", "Rasool")
+                .age(27)
+                .phone("00971586213672")
+                .address("karachi,pakistan")
+                .build();
+
+        Log.d("Zeeshan", "onCreate: " + task);
 
         if (getIntent().getExtras() != null) {
             if (getIntent().hasExtra("toDo")) {
